@@ -166,3 +166,5 @@ Este proyecto fue desarrollado siguiendo los principios de:
 ## 📄 Licencia
 
 Proyecto educativo - 2026
+firebase hosting
+https://proyectos-tecnologicos-astro.web.app/
