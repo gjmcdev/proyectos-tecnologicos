@@ -1,16 +1,190 @@
 ---
-
+// Página principal del Sistema de Información de Proyectos Tecnológicos
 ---
 
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Sistema de Información de Proyectos Tecnológicos</title>
+		<style>
+			:root {
+				--primary-color: #2563eb;
+				--secondary-color: #1e40af;
+				--bg-color: #f8fafc;
+				--text-color: #1e293b;
+				--border-color: #e2e8f0;
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+				background: var(--bg-color);
+				color: var(--text-color);
+				line-height: 1.6;
+			}
+
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 2rem;
+			}
+
+			.header {
+				text-align: center;
+				padding: 3rem 0;
+				background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+				color: white;
+				margin-bottom: 3rem;
+				border-radius: 1rem;
+				box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+			}
+
+			.header h1 {
+				font-size: 2.5rem;
+				margin-bottom: 1rem;
+				font-weight: 700;
+			}
+
+			.header p {
+				font-size: 1.2rem;
+				opacity: 0.95;
+			}
+
+			.section {
+				background: white;
+				padding: 2rem;
+				margin-bottom: 2rem;
+				border-radius: 0.75rem;
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+				border: 1px solid var(--border-color);
+			}
+
+			.section h2 {
+				color: var(--primary-color);
+				margin-bottom: 1rem;
+				font-size: 1.75rem;
+				border-bottom: 3px solid var(--primary-color);
+				padding-bottom: 0.5rem;
+			}
+
+			.section p {
+				margin-bottom: 1rem;
+				font-size: 1.05rem;
+			}
+
+			.tech-list {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 1rem;
+				margin-top: 1rem;
+			}
+
+			.tech-item {
+				background: var(--bg-color);
+				padding: 0.75rem 1.25rem;
+				border-radius: 0.5rem;
+				border: 2px solid var(--border-color);
+				font-weight: 600;
+				color: var(--secondary-color);
+			}
+
+			.cta-button {
+				display: inline-block;
+				background: var(--primary-color);
+				color: white;
+				padding: 1rem 2.5rem;
+				text-decoration: none;
+				border-radius: 0.5rem;
+				font-weight: 600;
+				font-size: 1.1rem;
+				margin-top: 1.5rem;
+				transition: all 0.3s ease;
+				box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+			}
+
+			.cta-button:hover {
+				background: var(--secondary-color);
+				transform: translateY(-2px);
+				box-shadow: 0 6px 15px rgba(37, 99, 235, 0.4);
+			}
+
+			.footer {
+				text-align: center;
+				padding: 2rem;
+				color: #64748b;
+				margin-top: 3rem;
+			}
+		</style>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<div class="container">
+			<header class="header">
+				<h1>🚀 Sistema de Información de Proyectos Tecnológicos</h1>
+				<p>Gestión y visualización de iniciativas tecnológicas</p>
+			</header>
+
+			<main>
+				<section class="section">
+					<h2>📋 Propósito del Sistema</h2>
+					<p>
+						Este sistema web permite centralizar, organizar y visualizar información detallada 
+						sobre proyectos tecnológicos en desarrollo, finalizados o propuestos. Facilita la 
+						toma de decisiones mediante filtros inteligentes y visualización clara de datos.
+					</p>
+				</section>
+
+				<section class="section">
+					<h2>💡 ¿Qué son los Proyectos Tecnológicos?</h2>
+					<p>
+						Los proyectos tecnológicos son iniciativas que emplean herramientas, frameworks y 
+						metodologías digitales para resolver problemas reales. Abarcan áreas como desarrollo 
+						de software, inteligencia artificial, Internet de las Cosas (IoT), desarrollo web, 
+						redes de datos y ciberseguridad.
+					</p>
+					<p>
+						Cada proyecto se caracteriza por su área de aplicación, estado de avance y nivel de 
+						impacto esperado, permitiendo priorizar recursos y evaluar resultados.
+					</p>
+				</section>
+
+				<section class="section">
+					<h2>🛠️ Tecnologías Utilizadas</h2>
+					<div class="tech-list">
+						<span class="tech-item">Astro JS</span>
+						<span class="tech-item">Vue 3</span>
+						<span class="tech-item">Firebase Hosting</span>
+						<span class="tech-item">Inteligencia Artificial</span>
+					</div>
+					<p style="margin-top: 1.5rem;">
+						Este sistema fue desarrollado utilizando <strong>Astro JS</strong> como framework base 
+						para generar un sitio web estático ultra-rápido, combinado con <strong>Vue 3</strong> 
+						para proporcionar componentes interactivos con reactividad moderna. El despliegue se 
+						realiza en <strong>Firebase Hosting</strong> para garantizar velocidad y disponibilidad. 
+						Además, se utilizaron herramientas de <strong>Inteligencia Artificial</strong> para 
+						acelerar el desarrollo y mejorar la calidad del código.
+					</p>
+				</section>
+
+				<section class="section" style="text-align: center;">
+					<h2>🔍 Explorar Proyectos</h2>
+					<p>Accede al catálogo completo con filtros interactivos y visualización detallada.</p>
+					<a href="/catalogo" class="cta-button">Ver Catálogo de Proyectos</a>
+				</section>
+			</main>
+
+			<footer class="footer">
+				<p>Sistema de Información de Proyectos Tecnológicos - 2026</p>
+				<p>Desarrollado con Astro JS + Vue 3</p>
+			</footer>
+		</div>
 	</body>
 </html>
